@@ -1,8 +1,9 @@
 @import "../../styles/contants.scss";
 
 .wrapper {
+  background: inherit;
   position: relative;
-  z-index: 99;
+  z-index: 9999;
   opacity: 1;
   transform: none;
   position: sticky;

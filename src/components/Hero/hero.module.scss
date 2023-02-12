@@ -8,12 +8,22 @@
     z-index: 1;
 
     .upperElements {
+      @media (max-width: $sm) {
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
     .lowerElements {
+      @media (max-width: $sm), (max-width: $md) {
+        margin-top: 4rem;
+        gap: 2rem;
+        justify-content: center;
+      }
       margin-top: 12rem;
       display: flex;
       flex-wrap: wrap;
@@ -42,6 +52,10 @@
     }
 
     .email {
+      @media (max-width: $sm) {
+        display: none;
+        position: relative;
+      }
       color: orange;
       position: absolute;
       top: 50%;
@@ -49,6 +63,15 @@
     }
 
     .person {
+      @media (max-width: $sm), (max-width: $md) {
+        position: relative;
+        left: 0;
+        background-size: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: bottom;
+      }
       position: absolute;
       left: 30%;
       bottom: -2rem;
@@ -56,6 +79,13 @@
       background-image: url("../splash.png");
       background-repeat: no-repeat;
       background-size: 23rem;
+
+      img {
+        @media (max-width: $sm) {
+          width: 23rem;
+        }
+        margin-bottom: -5px;
+      }
     }
   }
 }
