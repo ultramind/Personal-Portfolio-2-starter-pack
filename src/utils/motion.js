@@ -14,7 +14,7 @@ export const headerVariants = {
     transition: {
       type: "spring",
       stiffness: 80,
-      delay: 1,
+      delay: 0.8,
     },
   },
 };
@@ -144,10 +144,9 @@ export const staggerChildren = {
   },
 };
 
-
 export const getMenuStyles = (menuOpened) => {
   if (document.documentElement.clientWidth <= 640) {
-    console.log("outside of sidebar reached")
+    console.log("outside of sidebar reached");
     return { right: !menuOpened && "-100%" };
   }
 };
