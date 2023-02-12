@@ -41,6 +41,7 @@ const Header = () => {
           </li>
         </ul>
 
+{/* for medium and small screens */}
         <div
           onClick={() => setMenuOpened((prev) => !prev)}
           className={css.menuIcon}

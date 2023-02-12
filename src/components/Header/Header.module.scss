@@ -67,5 +67,11 @@
         }
       }
     }
+    .menuIcon {
+      display: none;
+      @media (max-width: $sm), (max-width: $md) {
+        display: block;
+      }
+    }
   }
 }
